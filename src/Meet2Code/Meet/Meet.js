@@ -13,7 +13,7 @@ import TabArea from './components/TabArea/TabArea';
 import TitleArea from './components/TitleArea/TitleArea';
 import UtilityArea from './components/UtilityArea/UtilityArea';
 import InviteModal from './components/InviteModal/InviteModal';
-import serverEndpoint from '../config';
+import {serverEndpoint} from '../config';
 
 import { chatSocketListeners, chatStopListeners } from './Modules/Chat/Message';
 import { participantsListener, stopParticipantsListener } from './Modules/Participants/UsersInRoom';

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import Style from 'style-it';
-import serverEndpoint from '../config';
+import {serverEndpoint} from '../config';
 import CodeArea from "./ContestCodeArea"
 
 const Contest = (props) => {

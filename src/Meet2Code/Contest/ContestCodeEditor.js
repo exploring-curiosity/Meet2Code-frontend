@@ -7,7 +7,7 @@ import * as Y from 'yjs'
 import { WebsocketProvider } from 'y-websocket'
 import { MonacoBinding } from 'y-monaco'
 import * as monaco from 'monaco-editor'
-import serverEndpoint from '../config';
+import {serverEndpoint} from '../config';
 import Style from 'style-it';
 
 let editor;

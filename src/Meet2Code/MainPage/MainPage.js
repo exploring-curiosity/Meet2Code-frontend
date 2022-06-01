@@ -2,7 +2,7 @@ import React from 'react';
 import './main-page.css';
 import Style from 'style-it';
 import { useState, useEffect } from 'react';
-import serverEndpoint from '../config';
+import {serverEndpoint} from '../config';
 import { useNavigate } from "react-router-dom";
 import DateTimePicker from 'react-datetime-picker';
 

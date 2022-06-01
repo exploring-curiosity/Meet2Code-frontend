@@ -3,7 +3,7 @@ import './terminal.css';
 import axios from 'axios';
 import { returnData } from '../CodeEditor/CodeEditor';
 import Style from 'style-it';
-import serverEndpoint from '../../../../../config';
+import {serverEndpoint} from '../../../../../config';
 export default function Terminal(props) {
     
     const createSubmisssion = async (userInput, expectedOutput, code) => {

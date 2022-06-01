@@ -2,7 +2,7 @@ import React from 'react';
 import GoogleLogin from 'react-google-login'
 import './login.css'
 import Style from 'style-it';
-import serverEndpoint from '../config'
+import {serverEndpoint} from '../config'
 
 const Login=(props)=>{
 

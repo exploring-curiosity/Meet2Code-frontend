@@ -1,6 +1,5 @@
 
 
-// http://localhost:3030/
 // https://codebois-server.herokuapp.com/
 
 let localStream

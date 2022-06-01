@@ -3,7 +3,7 @@ import '../Meet/components/MainArea/CodeArea/Terminal/terminal.css';
 import axios from 'axios';
 import { returnData } from './ContestCodeEditor';
 import Style from 'style-it';
-import serverEndpoint from '../../Meet2Code/config';
+import {serverEndpoint} from '../../Meet2Code/config';
 export default function Terminal(props) {
     
     const createSubmisssion = async (userInput, expectedOutput, code) => {

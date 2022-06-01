@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.css';
 import { useState, useEffect } from 'react';
-import serverEndpoint from './config';
+import {serverEndpoint} from './config';
 import {
   BrowserRouter,
   Routes,

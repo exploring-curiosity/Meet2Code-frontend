@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './board.css';
+import { clientEndpoint } from '../../../../../config';
 
 const Board=(props)=> {
     useEffect(()=>{
@@ -7,7 +8,7 @@ const Board=(props)=> {
         if(props.ctx===undefined) return;
         props.ctx.strokeStyle = props.color;
         props.ctx.lineWidth = props.size;
-        if(props.image!==undefined && props.image.src!=="http://localhost:3000/null")
+        if(props.image!==undefined && props.image.src!==`${clientEndpoint}/null`)
             props.ctx.drawImage(props.image,0,0);
     },[props.image,props.color,props.size,props.ctx]);
     useEffect(()=>{
