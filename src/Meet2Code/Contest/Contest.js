@@ -98,6 +98,7 @@ const Contest = (props) => {
                 setCurrentTab={setCurrentTab}
                 tag={tag}
                 setTag={setTag}
+                setTabs={setTabs}
                 modalQuestions={modalQuestions}
                 setModalQuestions={setModalQuestions}
                 questionsHtml = {contestQuestions}

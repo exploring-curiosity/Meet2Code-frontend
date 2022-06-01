@@ -10,12 +10,10 @@ import * as monaco from 'monaco-editor'
 import serverEndpoint from '../config';
 import Style from 'style-it';
 
-const monacoThemeList = ["vs", "vs-dark", "hc-black"]
 let editor;
 
 export default function CodeEditor(props) {
     
-    const [Qpop,setQpop] = useState(false);
     let [leaderboard, setLeaderBoard] = useState([]);
 
     useEffect(()=>{
@@ -63,24 +61,24 @@ export default function CodeEditor(props) {
         props.setCurrentTab(tabId)
     }
   
-    let closeTab=(tabId)=>{
+    // let closeTab=(tabId)=>{
   
-        let curLen = props.tabLen, curList = [...props.codeTabs]
-        curList.splice(curList.indexOf(tabId),1)
+    //     let curLen = props.tabLen, curList = [...props.codeTabs]
+    //     curList.splice(curList.indexOf(tabId),1)
   
-        if(curList.length === 0)
-        {
-          curList.push(curLen);
-          props.setCurrentTab(curLen);
-          props.setTablen(curLen+1)
-        }
-        props.setCodeTabs(curList)
-        if(tabId === props.currentTab)
-        { 
-            props.setCurrentTab(curList[0])
-        }
+    //     if(curList.length === 0)
+    //     {
+    //       curList.push(curLen);
+    //       props.setCurrentTab(curLen);
+    //       props.setTablen(curLen+1)
+    //     }
+    //     props.setCodeTabs(curList)
+    //     if(tabId === props.currentTab)
+    //     { 
+    //         props.setCurrentTab(curList[0])
+    //     }
   
-    }
+    // }
   
     let changeEditor=(language,theme)=>{
   

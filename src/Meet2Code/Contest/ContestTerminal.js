@@ -84,7 +84,7 @@ const runCode = async() => {
     //If the number of passed test cases is equal to total number of testcases send result to server
     if(passedtc === testCases.length)
     {
-        let res = await fetch(serverEndpoint + '/addScore/contest',{
+        await fetch(serverEndpoint + '/addScore/contest',{
             method : "POST",
             headers: {
                 'Accept': 'application/json',
