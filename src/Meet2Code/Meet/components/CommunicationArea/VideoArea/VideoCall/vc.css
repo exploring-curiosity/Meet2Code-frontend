@@ -1,0 +1,100 @@
+.mediaOptions  {
+	position: relative;
+	/* top: 70%; */
+	bottom: 0%;
+	left: 50%;
+	align-items: center;
+}
+
+.userInfo
+{
+	position: absolute;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+	border-radius: 10px;
+	width: 100%;
+	bottom: 0%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mediaBox
+{
+	position: relative;
+	width: 28%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}	
+
+.user-name
+{
+	position: relative;
+	color: white;
+	left: 5%;
+    top: 15%
+}
+
+.user
+{
+	align-items: center;
+	position: relative;
+}
+
+.audioStatus	
+{
+	position: relative;
+
+}
+
+.videoStatus
+{
+	position: relative;
+	right: 5%;
+}
+
+#video-container{
+	width:100%;
+	height: 100%;;
+}
+#video-grid-block{
+	width:100%;
+	height: 100%;;
+}
+
+#video-container #video-loader {
+	height: 80%;
+	overflow-y: auto;
+	position: relative;
+	display: grid;
+	grid-auto-flow: row ;
+	grid-auto-rows: 30% ; 
+	grid-template-columns: unset; 
+	grid-template-rows: unset;
+	grid-gap: 1em;
+	padding:5%;
+	top:7%;
+}
+
+#video-grid-block #video-loader{
+    height:100%;
+    width:100%;
+    border-radius: 1em;
+    border:1px solid blue;
+	overflow-y: auto;
+	overflow-x:hidden;
+	display: grid;
+	grid-auto-flow:rows ;
+	grid-auto-rows: 30% ; 
+	grid-template-columns: repeat(3,minmax(33.33%,33.33%)); 
+	grid-template-rows: unset;
+	grid-gap: 1em;
+}
+
+
+video {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}

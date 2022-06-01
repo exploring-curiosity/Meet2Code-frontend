@@ -1,0 +1,141 @@
+.code-editor-container{
+    border-radius:1em;
+    grid-row:1/3;
+    grid-column: 2/5;
+}
+
+.monaco-editor{
+    height: 90%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.tabs-bar{
+    width: calc(100% - 2em);
+    height:5%;
+    border-radius: 1em;
+    padding-left:1em;
+    padding-right:1em;
+    display: grid;
+    overflow-x:visible;
+    overflow-y:hidden;
+	grid-auto-flow: column ;
+	grid-auto-columns: 10%;
+	grid-template-columns: unset; 
+	grid-template-rows: unset;
+	grid-gap: 1em;
+}
+.tab{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+.tabs-bar::-webkit-scrollbar {
+    display: none;
+}
+.utility-bar{
+    width: calc(100% - 2em);
+    height:5%;
+    border-radius: 1em;
+    padding-left:1em;
+    padding-right:1em;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropdown-menu-language{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-language:hover .dropdown-menu-language{
+    display:block;
+}
+.dropdown-language{
+    width:20%;
+    text-align: center;
+    border-radius: 1em;
+}
+
+
+.dropdown-menu-theme{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-theme:hover .dropdown-menu-theme{
+    display:block;
+}
+.dropdown-theme{
+    width:20%;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.question-picker{
+    width:20%;
+    text-align: center;
+    border-radius: 1em;
+}
+
+
+
+.modal-dialog{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height:40%;
+    width:40%;
+    border-radius: 1em;
+    top:50%;
+    left:50%;
+    z-index:3;
+    transform: translate(-50%,-50%);
+}
+
+.modal-dialog[show="1"]{
+    display: flex;
+}
+
+.dropdown-menu-category{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-category:hover .dropdown-menu-category{
+    display:block;
+}
+.dropdown-category{
+    width:20%;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.modal-content{
+    width:90%;
+    height:90%;
+    overflow-y: auto;
+}
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+.question-item:hover{
+    text-decoration: underline;
+}

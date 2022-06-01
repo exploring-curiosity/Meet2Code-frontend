@@ -1,0 +1,57 @@
+.outer-container{
+    width:100%;
+    height:100%;
+    background-color: #ac9e9e;
+    color:antiquewhite;
+    border-radius: 1em;
+}
+
+.color-picker-container{
+    text-align:center;
+}
+
+.brush-size-container{
+    text-align: center;
+}
+
+.tools-section{
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8%;
+    width:100%;
+}
+
+.board-container{
+    position: relative;
+    left:50%;
+    width:90%;
+    height:90%;
+    border-radius: 1em;
+    transform: translateX(-50%);
+}
+
+#board-erase-icon{
+    height: 3em;
+    width: 3em;
+}
+
+#board-brush-icon{
+    height: 3em;
+    width: 3em;
+}
+
+#erase{
+    background:none;
+    border: none;
+}
+
+#brush{
+    background:none;
+    border: none;
+}
+.brush-size-container select{
+    background:none;
+    
+}

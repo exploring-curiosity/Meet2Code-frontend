@@ -1,0 +1,173 @@
+.utility-area{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    border-radius: 1em;
+    width: calc(100% - 8em);
+    left: 4em;
+    bottom:0.5em;
+    height: 3em;
+}
+
+.utility-area[view="1"]{
+    display: flex;
+}
+
+.utility-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 1em;
+    width: calc(100% - 40em);
+    height: 3em;
+}
+
+#screen-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.screen-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.screen-btn:hover{
+    transform: translateY(-1em);
+}
+
+#cam-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.cam-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.cam-btn:hover{
+    transform: translateY(-1em);
+}
+
+#mic-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.mic-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.mic-btn:hover{
+    transform: translateY(-1em);
+}
+
+#end-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.end-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.end-btn:hover{
+    transform: translateY(-1em);
+}
+
+#download-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.download-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.download-btn:hover{
+    transform: translateY(-1em);
+}
+
+#clear-icon{
+    height: 3em;
+    width: 3em;
+}
+
+.clear-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.clear-btn:hover{
+    transform: translateY(-1em);
+}
+
+#invite-icon{
+    height: 3em;
+    width: 3em;
+    /* filter: invert(49%) sepia(19%) saturate(6457%) hue-rotate(331deg) brightness(96%) contrast(89%); */
+}
+
+.invite-btn{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.invite-btn:hover{
+    transform: translateY(-1em);
+}

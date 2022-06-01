@@ -1,0 +1,6 @@
+.question-container{
+    border-radius:1em;
+    grid-row:1/4;
+    padding:1em;
+    overflow-y: auto;
+}

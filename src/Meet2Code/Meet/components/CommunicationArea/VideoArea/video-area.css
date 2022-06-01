@@ -1,0 +1,19 @@
+.video-area{
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+}
+.close-btn{
+    border: none;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: 0.5s;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index:1;
+}

@@ -1,0 +1,48 @@
+.participantArea{
+    position: relative;
+    width:100%;
+    height:89%;
+    overflow: auto;
+}
+.participantContainer{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.click-link{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.participant{
+    width:80%;
+    height:3em;
+    overflow-wrap: break-word;
+    margin:2em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+.participant p{
+    padding-top:0.8em;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+.participant img{
+    width: 3em;
+    height: 3em;
+    border-radius: 20px;
+}
+.participant-score{
+    position: absolute;
+    top:2em;
+    left:2.5em;
+    height: 1em;
+    padding:0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}

@@ -1,0 +1,517 @@
+.main-page{
+    width: 100%;
+    height: 100%;
+}
+
+.main-page-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.home-page-topbar{
+    width: 100%;
+    height:20%;
+    position: relative;
+    top:0;
+    display: flex;
+}
+.topbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+#topbar-app-logo{
+    width: 5em;
+    height:4em;
+    border-radius: 2em;
+}
+
+.home-page-searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height:100%;
+}
+.search-bar{
+    width: 100%;
+    height: 4em;
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-icon{
+    width: 1.3em;
+    height: 1.3em;
+}
+.search-input-container{
+    width: 80%;
+}
+.search-input{
+    width: 100%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#user-dp{
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+}
+
+
+.profile-drop-down{
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+.log-out-button{
+    font-weight: 200;
+    padding-top: 8px;
+    padding: 12px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.drop-down-profile{
+    font-weight: 200;
+    padding-top: 8px;
+    padding: 12px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.profileDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    width: 200px;
+    background-color: #151a21;
+    border-radius: 8px;
+    border-color: #0b0e11;
+    overflow: hidden;
+    transform: translate(-50%, 0px);
+    border-width: 1px;
+    color: #dee3ea;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.main-page-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.drop-down-icon{
+    width: 1em;
+    height: 1em;
+    transition: 0.5s;
+}
+.drop-down-icon[invert="1"]{
+    transform: rotateZ(180deg);
+}
+.create-room{
+    width: 30%;
+    height:4em;
+    border-radius: 1em;
+}
+.create-room-header{
+    cursor: pointer;
+    width: 80%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+.join-room{
+    width: 30%;
+    height:4em;
+    border-radius: 1em;
+}
+.join-room-header{
+    cursor: pointer;
+    width: 80%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+.header-text{
+    font-size: 1.5em;
+}
+.create-room-toggler{
+    width: 100%;
+    height:16em;
+    border-radius: 1em;
+}
+.create-room-desc{
+    text-align: left;
+    padding-left:2em;
+}
+.join-room-toggler{
+    width: 100%;
+    height:16em;
+    border-radius: 1em;
+}
+.join-room-desc{
+    text-align: left;
+    padding-left:2em;
+}
+.info-text-join-room{
+    text-align: left;
+    padding-left:2em;
+    padding-top: 1em;
+}
+.create-room-object{
+    display: flex;
+    justify-content: space-around;
+    margin-top:1em;
+}
+.join-room-object{
+    display: flex;
+    justify-content: space-around;
+    margin-top:1em;
+}
+.create-room-title{
+    height:3em;
+    width:60%;
+    padding-left: 1em;
+    border-radius: 1em;
+}
+.create-room-type{
+    height:3em;
+    width:20%;
+    border-radius: 1em;
+    outline:none;
+    border:none;
+}
+.join-room-id{
+    height:3em;
+    width:60%;
+    padding-left: 1em;
+    border-radius: 1em;
+}
+.join-room-type{
+    height:3em;
+    width:20%;
+    border-radius: 1em;
+    outline:none;
+    border:none;
+}
+.create-room-password{
+    height:3em;
+    width: 60%;
+    padding-left: 1em;
+    border-radius: 1em;
+    margin-left: 4%; 
+    margin-top:1em;
+}
+.join-room-password{
+    height:3em;
+    width: 60%;
+    padding-left: 1em;
+    border-radius: 1em;
+    margin-left: 4%; 
+    margin-top:1em;
+}
+.create-room-text-desc{
+    height:5em;
+    width: 90%;
+    padding-left: 1em;
+    border-radius: 1em;
+    margin-left: 4%; 
+    margin-top:1em;
+    padding-top:0.5em;
+}
+.create-room-submit{
+    width:30%;
+    height: 3em;
+    text-align: center;
+    margin-left: 4%;
+    border-radius:1em;
+    margin-top:1em;
+}
+.join-room-submit{
+    width:30%;
+    height: 3em;
+    text-align: center;
+    margin-left: 4%;
+    border-radius:1em;
+    margin-top:1em;
+}
+
+.modal-already-joined{
+    position:absolute;
+    z-index:1;
+    height:7em;
+    width:30em;
+    border-radius: 1em;
+    top:6em;
+    left:50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.modal-already-joined[disp="1"]{
+    display: block;
+}
+
+.homePageTopBarName{
+    font-size: 25px;
+}
+.profileDropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.inner-modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-close-btn{
+    position: absolute;
+    top:1px;
+    right:1px;
+    outline: none;
+    border:none;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+#modal-close-icon{
+    width: 2em;
+    height: 2em;
+}
+.modal-btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.modal-rejoin-btn{
+    outline: none;
+    border:none;
+    width: 5em;
+    height: 2em;
+    border-radius:1em;
+}
+
+.modal-leave-btn{
+    outline: none;
+    border:none;
+    width: 5em;
+    height: 2em;
+    border-radius:1em;
+}
+
+.home-public-display{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.publicRoomComponent{
+    border-radius:1em;
+    width:15%;
+    padding: 25px;
+    height: calc(100% + 4rem);
+    align-items: center;
+    margin-top: 30px;
+}
+
+.publicRoomComponent :hover{
+    background-position: -120px;
+    transition: all 0.3s ease;
+}
+
+.roomDispBorder{
+    width: 100%;
+    height: 1%;
+    background-color: white;
+    margin-top: 5%;
+}
+
+.user-dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 2em;
+}
+
+.contest-helper-ui{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    
+}
+
+.create-contest{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/*modal screen css content start*/
+.modalContest {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content-create-contest{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    height: 50%;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    z-index: 10;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.contest-question-picker{
+    display: flex;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    max-width: 110%;
+    max-height: 100%;
+    font-size: large;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content select option {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content select option:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+.questionOption{
+    margin-top: 10px;
+}
+
+.contestTimePicker{
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contestStartNotification
+{
+    width: 100%;
+    visibility: hidden;
+    background-color: #14903F;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+}
+
+.contestStartNotificationOn{
+    height : 4%;
+    visibility: visible;
+}
+
+.contestListDisplay{
+    color: white;
+}
+
+#joinModal{
+    width: 110%;
+}
+
+.contestListDisplayItem{
+
+    margin: 10px;
+}
+
+/*modal screen css content create finish*/

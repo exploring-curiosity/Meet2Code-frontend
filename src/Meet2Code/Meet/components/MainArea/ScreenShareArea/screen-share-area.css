@@ -1,0 +1,10 @@
+.screen-share-area{
+    width: 100%;
+    height:100%;
+    border-radius: 1em;
+}
+#screen-share-video{
+    width: 100%;
+    height:100%;
+    border-radius:1em;
+}

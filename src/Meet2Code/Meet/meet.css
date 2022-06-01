@@ -1,0 +1,93 @@
+
+button:hover{
+    cursor: pointer;
+}
+
+.meet-app{
+    width:100%;
+    height:100%;
+}
+
+.App-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(25%,25%));
+    grid-template-rows: repeat(10,minmax(10%,10%));
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+    padding: 1em;
+    transition: 1s;
+}
+.title-space{
+    position:absolute;
+    opacity: 0;
+    width:100%;
+    height:1em;
+    top:0;
+    transition: 1s;
+}
+.utilities{
+    position:absolute;
+    opacity: 0;
+    width:100%;
+    height:1em;
+    bottom:0;
+    transition: 1s;
+}
+
+.tab-switch{
+    position:absolute;
+    opacity: 0;
+    width:1em;
+    height: 100%;
+    top:0;
+    left:0;
+    transition: 1s;
+}
+
+.comm-switch{
+    position:absolute;
+    opacity: 0;
+    width:1em;
+    height: 100%;
+    top:0;
+    right:0;
+    transition: 1s;
+}
+
+
+.meet-app[view="1"] > .App-container{
+    width: calc(100% - 8em);
+    height: calc(100% - 8em);
+    padding: 4em;
+}
+
+.meet-app[view="1"] > .title-space, .meet-app[view="1"] > .utilities {
+    opacity: 1;
+    height: 4em;
+}
+
+.meet-app[view="1"] > .tab-switch, .meet-app[view="1"] > .comm-switch{
+    opacity: 1;
+    width: 4em;
+}
+
+.invite-modal{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height:20%;
+    width:20%;
+    border-radius: 1em;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.invite-modal[show="1"]{
+    display: flex;
+}
+
+#meet-app #video-loader{
+    display: none;
+}
